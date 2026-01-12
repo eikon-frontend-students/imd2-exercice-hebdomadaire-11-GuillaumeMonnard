@@ -1,9 +1,11 @@
 var toggleBtn = document.querySelector(".likeBtn");
-var text = document.querySelector("buttonNbr");
+let number = 147;
 
 toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("is-active");
   if (toggleBtn.classList.contains("is-active")) {
-    text.textContent = 1000;
+    number++;
+  } else {
+    number--;
   }
 });
