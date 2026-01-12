@@ -2,6 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #f00;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
 }
 
 a {
@@ -11,4 +17,13 @@ a {
 img,
 video {
   display: block;
+}
+
+.likeBtn {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 19px;
+  border: 2px solid #f00;
 }
