@@ -2,12 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #f00;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px; /* 100% */
 }
 
 a {
@@ -19,11 +13,39 @@ video {
   display: block;
 }
 
+body {
+  margin: 50px;
+}
+
 .likeBtn {
+  width: 136px;
+  height: 38px;
   display: flex;
   padding: 10px 20px;
   align-items: center;
   gap: 10px;
   border-radius: 19px;
+  background-color: #fff;
   border: 2px solid #f00;
+  color: #f00;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+}
+
+.buttonNbr {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.likeBtn.is-active {
+  color: #fff;
+  background-color: #f00;
+}
+
+.buttonNbr.is-active {
+  color: white;
 }
