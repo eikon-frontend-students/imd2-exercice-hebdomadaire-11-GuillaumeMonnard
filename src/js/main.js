@@ -1,11 +1,13 @@
 var toggleBtn = document.querySelector(".likeBtn");
-let number = 147;
-
+let number = document.querySelector("#buttonNbr");
+let count = Number(number.textContent);
 toggleBtn.addEventListener("click", function () {
   toggleBtn.classList.toggle("is-active");
   if (toggleBtn.classList.contains("is-active")) {
-    number++;
+    count++;
+    number.textContent = count;
   } else {
-    number--;
+    count--;
+    number.textContent = count;
   }
 });
