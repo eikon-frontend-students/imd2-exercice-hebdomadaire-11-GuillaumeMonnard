@@ -6,8 +6,8 @@ toggleBtn.addEventListener("click", function () {
   if (toggleBtn.classList.contains("is-active")) {
     count++;
     number.textContent = count;
-  } else {
-    count--;
-    number.textContent = count;
+    setTimeout(() => {
+      toggleBtn.classList.remove("is-active");
+    }, 2000);
   }
 });
